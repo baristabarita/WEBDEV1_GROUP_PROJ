@@ -1,0 +1,38 @@
+/* Body CSS START */
+body{
+    background-color: #353E56 !important;
+    /*background: url(../images/icons/letterP.png);*/
+}
+/* Body CSS END */
+
+/* Index Page NavBar CSS START */
+.navbar{
+    background-color: #353E56;
+}
+.btn{
+    color: white;
+}
+.btn:hover{
+    color: #F5E6CA;
+}
+.nav-but{
+    background-color: #563C7D;
+}
+/* Index Page NavBar CSS START */
+
+/*Other Systlings*/
+#homepage-header{
+    color: white;
+    padding-top: 100px;
+}
+.card-text{
+    color: white;
+}
+#homepage-btn{
+    color: white;
+}
+.homepage-pic{
+    margin-top: 80px;
+    width: 120%;
+    height: 120%;
+}

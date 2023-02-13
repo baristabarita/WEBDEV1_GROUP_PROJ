@@ -1,16 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel = "stylesheet" href = "../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
 
     <title>WebDev Group Proj</title>
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <h2>POG</h2>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="../images/icons/letterP.png" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LinkHere</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="btn" href="#">Register</a>
+                </li>
+                <li class="nav-but">
+                    <a class="btn" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Section -->
+    <div class = "hompage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-5">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1 id ="homepage-header">
+                                    Proventory: Your inventory & Stock Management Solution
+                                </h1>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    The Inventory system to control and manage products in the warehouse
+                                    in real time and integrated to make it easier to develop your business.
+                                </p>
+                                <b></b>
+                                <a href="#" id="homepage-btn" class="btn btn-outline-primary rounded-0 float-end">Register Now</a>
+                                <b></b>
+                                <p>14K Brand Owners, 23K Active Users, 500+ Parters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-5">
+                        <div class="card-body">
+                            <img src="../images/homepage-pic.png" class="homepage-pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Section End -->
+
+    <!-- JavaScrips Start -->
+    <script src="../js/jquery/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/popper/popper.js"></script>
+    <!-- JavaScripts End -->
 </body>
+
 </html>
