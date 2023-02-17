@@ -1,7 +1,12 @@
 body{
-	background-color: bisque;
+    background-color: #353E56 !important;
+    /*background: url(../images/icons/letterP.png);*/
 }
 
 .card-body{
-	background-color: aquamarine;
+	background-color: #F5E6CA;
+}
+
+#reg-title, #login-title{
+	text-align: center;
 }
