@@ -1,7 +1,11 @@
 /* Body CSS START */
-body{
-    background-color: #353E56 !important;
+.header-section{
+    background-color: #353E56;
+    padding-bottom: 3%;
     /*background: url(../images/icons/letterP.png);*/
+}
+#index-features-section{
+    background-color: #563C7D;
 }
 /* Body CSS END */
 
@@ -19,6 +23,12 @@ body{
     background-color: #563C7D;
 }
 /* Index Page NavBar CSS START */
+
+/* Features Section CSS START */
+#features-card-text{
+    color:#353E56;
+}
+/* Features Section CSS END */
 
 /*Other Systlings*/
 #homepage-header{
