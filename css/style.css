@@ -4,5 +4,5 @@ html, body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden; /*To remove any white space*/
 }
