@@ -1,12 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: #353E56 !important;
-    /*background: url(../images/icons/letterP.png);*/
+    background: url(../images/log-background.png);
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 20;
+    text-align: center;
+}
+
+form {
+
+}
+
+.main-title {
+    color: #fff;
+    margin-bottom: 30px;
+    
+}
+
+.card {
+    border-radius: 20px;
+    background-color: #F26419;
+    width: 500px;
 }
 
 .card-body{
-	background-color: #F5E6CA;
+	background-color: #F6AE2D;
+    border-radius: 20px;
 }
 
 #reg-title, #login-title{
 	text-align: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.icon {
+    width: 25px;
+    position: relative;
+    left:23rem;
+    bottom: 2.15rem;
 }
