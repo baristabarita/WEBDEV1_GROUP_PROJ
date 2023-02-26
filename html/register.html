@@ -6,53 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sign Page</title>
 	<link rel = "stylesheet" href="../css/bootstrapMin.css">
-  <link rel = "stylesheet" href="../css/logreg.css"
+  <link rel = "stylesheet" href="../css/reg.css"
 </head>
 
 <body>
 	<section class="h-100">
-		<div class="container h-100">
+		<div class="container-fluid">
 			<div class="row justify-content-sm-center h-100">
 				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
 					<div class="text-center my-5">
-						<img src="../images/icons/letterP.png" alt="logo" width="100">
+						<img src="../images/icons/letterP.png" class="logo" alt="logo" width="100">
 					</div>
+					<h1 class="main-title">Welcome to <strong>Proventory</strong></h1>
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
-							<h1 id = "reg-title" class="fs-4 card-title fw-bold mb-4">Register</h1>
+							<h1 id = "reg-title" class="fs-2 card-title fw-bold mb-4">Register</h1>
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">
-									<label class="mb-2 text-muted" for="name">Name</label>
+									<label class="mb-2" for="name">Full Name</label>
 									<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+									<img src="../images/icons/profile.png" class="icon" alt="">
 									<div class="invalid-feedback">
 										Name is required	
 									</div>
 								</div>
 
 								<div class="mb-3">
-									<label class="mb-2 text-muted" for="email">E-Mail Address</label>
+									<label class="mb-2" for="email">E-Mail Address</label>
 									<input id="email" type="email" class="form-control" name="email" value="" required>
+									<img src="../images/icons/email.png" class="icon" alt="">
 									<div class="invalid-feedback">
 										Email is invalid
 									</div>
 								</div>
 
 								<div class="mb-3">
-									<label class="mb-2 text-muted" for="password">Password</label>
+									<label class="mb-2" for="password">Password</label>
 									<input id="password" type="password" class="form-control" name="password" required>
+									<img src="../images/icons/padlock.png" class="icon" alt="">
 								    <div class="invalid-feedback">
 								    	Password is required
 							    	</div>
 								</div>
 								<div class="mb-3">
-									<label class="mb-2 text-muted" for="password">Retype Password</label>
+									<label class="mb-2" for="password">Retype Password</label>
 									<input id="password" type="password" class="form-control" name="password" required>
+									<img src="../images/icons/padlock.png" class="icon" alt="">
 								    <div class="invalid-feedback">
 								    	Retyped Password is required
 							    	</div>
 								</div>
 
-								<p class="form-text text-muted mb-3">
+								<p class="form-text mb-3">
 									By registering you agree with our terms and condition.
 								</p>
 
