@@ -30,10 +30,19 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="card2 card border-0 px-4 py-3">
-						<img class="reg-img-icon" src="../images/icons/login.png">
-						<h1 id="log-title">Log In to your Account</h1>
-
+						<img class="reg-img-icon" src="../images/icons/register.png">
+						<h1 id="reg-title">Register your Account</h1>
 						<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+							<div class="row px-3">
+								<label class="mb-2" for="user-name">
+									<h6 class="mb-0 text-sm">Full Name</h6>
+								</label>
+								<input id="user-name" class="form-control" type="user-name" name="user-name" value="" required
+									autofocus placeholder="Enter your full name">
+									<div class="invalid-feedback">
+										Email is invalid
+									</div>
+							</div>
 							<div class="row px-3">
 								<label class="mb-2" for="email">
 									<h6 class="mb-0 text-sm">Email Address</h6>
@@ -54,20 +63,23 @@
 									Password is required
 								</div>
 							</div>
-							<div class="row px-3 mb-4">
-								<div class="custom-control custom-checkbox custom-control-inline">
-									<input id="chk1" type="checkbox" name="chk" class="custom-control-input">
-									<label for="chk1" class="custom-control-label text-sm">Remember me</label>
+							<div class="row px-3">
+								<label class="mb-2">
+									<h6 class="mb-0 text-sm">Retype Password</h6>
+								</label>
+								<input id="password" type="password" class="form-control" name="password"
+									placeholder="Retype your password" required>
+								<div class="invalid-feedback">
+									Retyped Password is required
 								</div>
-								<a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
 							</div>
 							<div class="row mb-3 px-3">
-								<button id="log-button" type="submit" class="btn text-center">Sign In</button>
+								<button id="reg-button" type="submit" class="btn text-center">Sign Up</button>
 							</div>
 						</form>
 						<div id="acc-option" class="card-footer py-3 border-0">
 							<div class="text-center">
-								Don't have an account? <a href="register.html" class="text-danger">Sign up</a>
+								Already have an account? <a href="register.html" class="text-danger">Sign In.</a>
 							</div>
 						</div>
 					</div>
