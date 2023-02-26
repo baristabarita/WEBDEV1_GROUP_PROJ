@@ -51,13 +51,19 @@
 
 /* Features Section CSS START */
 .features-section{
-    background-color: #6369D1;
+    background-color: #CCDBDC;
     margin-bottom: 0px;
 }
 #features-title{
     margin-top: 0px;
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center;
+}
+#features-icon{
+    width: 35%;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #features-card-text{
     color:#353E56;
