@@ -28,4 +28,16 @@ img {
 .title {
     display: flex;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #131B23;
+    width: 100px;
+    height: 100%;
+    display: inline-block;
+    transition: var(--transition);
+    white-space: nowrap;
+}
   
