@@ -55,7 +55,10 @@
     padding: 80px 0;
     margin-bottom: 0px;
 }
-
+#features-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
 #feature-card{
     margin-bottom: 10px;
 }
