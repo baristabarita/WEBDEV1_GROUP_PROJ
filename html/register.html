@@ -1,87 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sign Page</title>
-	<link rel = "stylesheet" href="../css/bootstrapMin.css">
-  <link rel = "stylesheet" href="../css/reg.css"
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register Page</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/reg.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-	<section class="h-100">
-		<div class="container-fluid">
-			<div class="row justify-content-sm-center h-100">
-				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
-					<div class="text-center my-5">
-						<img src="../images/icons/letterP.png" class="logo" alt="logo" width="100">
-					</div>
-					<h1 class="main-title">Welcome to <strong>Proventory</strong></h1>
-					<div class="card shadow-lg">
-						<div class="card-body p-5">
-							<h1 id = "reg-title" class="fs-2 card-title fw-bold mb-4">Register</h1>
-							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
-								<div class="mb-3">
-									<label class="mb-2" for="name">Full Name</label>
-									<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
-									<img src="../images/icons/profile.png" class="icon" alt="">
-									<div class="invalid-feedback">
-										Name is required	
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<label class="mb-2" for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required>
-									<img src="../images/icons/email.png" class="icon" alt="">
-									<div class="invalid-feedback">
-										Email is invalid
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<label class="mb-2" for="password">Password</label>
-									<input id="password" type="password" class="form-control" name="password" required>
-									<img src="../images/icons/padlock.png" class="icon" alt="">
-								    <div class="invalid-feedback">
-								    	Password is required
-							    	</div>
-								</div>
-								<div class="mb-3">
-									<label class="mb-2" for="password">Retype Password</label>
-									<input id="password" type="password" class="form-control" name="password" required>
-									<img src="../images/icons/padlock.png" class="icon" alt="">
-								    <div class="invalid-feedback">
-								    	Retyped Password is required
-							    	</div>
-								</div>
-
-								<p class="form-text mb-3">
-									By registering you agree with our terms and condition.
-								</p>
-
-								<div class="align-items-center d-flex">
-									<button type="submit" class="btn btn-primary ms-auto">
-										Register	
-									</button>
-								</div>
-							</form>
-						</div>
-						<div class="card-footer py-3 border-0">
-							<div class="text-center">
-								Already have an account? <a href="login.html" class="text-dark">Login</a>
+	<div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+		<div class="card card0 border-0">
+			<div class="row d-flex">
+				<div class="col-lg-6">
+					<div class="card1 pb-5">
+						<div class="row">
+							<div id="logo-n-text" class="text-center my-5">
+								<img src="../images/icons/letterP.png" class="logo" alt="logo">
+								<h1 class="main-title">Welcome to <strong>Proventory</strong></h1>
 							</div>
 						</div>
+						<div class="row px-3 justify-content-center mt-4 mb-5 border-line">
+							<img src="../images/reg-image.png" class="reg-image">
+						</div>
 					</div>
-					<div class="text-center mt-5 text-muted">
-						Copyright &copy; 2022-2023 &mdash; Proventory 
+				</div>
+				<div class="col-lg-6">
+					<div class="card2 card border-0 px-4 py-3">
+						<img class="reg-img-icon" src="../images/icons/login.png">
+						<h1 id="log-title">Log In to your Account</h1>
+
+						<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+							<div class="row px-3">
+								<label class="mb-2" for="email">
+									<h6 class="mb-0 text-sm">Email Address</h6>
+								</label>
+								<input id="email" class="form-control" type="email" name="email" value="" required
+									autofocus placeholder="Enter a valid email address">
+								<div class="invalid-feedback">
+									Email is invalid
+								</div>
+							</div>
+							<div class="row px-3">
+								<label class="mb-2">
+									<h6 class="mb-0 text-sm">Password</h6>
+								</label>
+								<input id="password" type="password" class="form-control" name="password"
+									placeholder="Enter password" required>
+								<div class="invalid-feedback">
+									Password is required
+								</div>
+							</div>
+							<div class="row px-3 mb-4">
+								<div class="custom-control custom-checkbox custom-control-inline">
+									<input id="chk1" type="checkbox" name="chk" class="custom-control-input">
+									<label for="chk1" class="custom-control-label text-sm">Remember me</label>
+								</div>
+								<a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+							</div>
+							<div class="row mb-3 px-3">
+								<button id="log-button" type="submit" class="btn text-center">Sign In</button>
+							</div>
+						</form>
+						<div id="acc-option" class="card-footer py-3 border-0">
+							<div class="text-center">
+								Don't have an account? <a href="register.html" class="text-danger">Sign up</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-
+	</div>
+	<div class="footer-section">
+		<div id="footer-text">
+			<div>
+				<h4 id="footer-title"><strong>Proventory</strong></h3>
+				</h4>
+			</div>
+			<div>
+				<h5 id="footer-content" class="ml-4 ml-sm-5 mb-2">About | Contact Us | Resources | Terms</h4>
+			</div>
+			<div>
+				<small id="footer-copyright" class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2019. All rights
+					reserved.</small>
+			</div>
+		</div>
+	</div>
 	<script src="../js/logreg.js"></script>
 </body>
+
 </html>
