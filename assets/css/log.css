@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background-image: url(../images/reg-background.png);
+    background-image: url(../../images/log-background2.png);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -15,7 +15,7 @@ body {
 }
 
 .card2 {
-    margin: 40px 40px 40px 40px;
+    margin: 40px 40px 0px 0px;
 }
 #logo-n-text{
     margin-left: auto;
@@ -33,25 +33,24 @@ body {
     margin-left: 35px;
 }
 
-.reg-image {
-    width:70%;
+.log-image {
+    width:90%;
 }
-.reg-img-icon{
+.log-img-icon{
     width: 12%;
     margin-left: auto;
     margin-right: auto;
     
 }
-#reg-title{
+#log-title{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
 }
-#reg-button{
+#log-button{
     border-radius: 25px;
-    background: #036D70;
-    margin-top:10px;
+    background: #2364AA;
     margin-left: auto;
     margin-right: auto;
     padding: 1% 21% 1% 21%;
@@ -61,7 +60,7 @@ body {
 }
 #acc-option{
     border-radius: 25px;
-    background-color: #037072;
+    background-color: #33658A;
     color: white;
 }
 
@@ -118,12 +117,22 @@ a {
     cursor: pointer;
 }
 
+.btn-blue {
+    background-color: #1A237E;
+    width: 150px;
+    color: #fff;
+    border-radius: 2px;
+}
 
-.btn:hover {
+.btn-blue:hover {
     background-color: #6369D1;
     cursor: pointer;
 }
 
+.bg-blue {
+    color: #fff;
+    background-color: #1A237E;
+}
 
 @media screen and (max-width: 991px) {
     .logo {
