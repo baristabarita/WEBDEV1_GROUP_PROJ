@@ -1,5 +1,5 @@
 
-/*Edit Photo CSS*/
+/*Edit/Add Photo CSS*/
 .select-prod-img{
     background-color: #EFEFEF;
     padding: 15px 10px 15px 10px;
@@ -27,7 +27,7 @@
 }
 
 /* Edit the other Info CSS */
-.edit-control{
+.edit-control, .add-box{
     display: block;
     width: 50%;
     height: calc(2.25rem + 2px);
@@ -68,7 +68,7 @@
   }
 
 /* Save Edit  button CSS */
-#saveEdit-btn{
+#saveEdit-btn, #saveProd-btn{
     background-color: #007EA7;
     margin-top: 10px;
     margin-left: auto;
@@ -86,6 +86,6 @@
     font-size: 20px;
     border-radius: 12px;
 }
-#saveEdit-btn a, #cancel-btn a{
+#saveProd-btn a, #saveEdit-btn a, #cancel-btn a{
     color: #fff;
 }

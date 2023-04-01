@@ -14,11 +14,12 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="../assets/css/sidebar-topbar.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/add-edit-product.css">
 
     <!-- Icon -->
     <link rel="icon" href="../images/icons/provlogo.png" type="image/x-icon">
     <!-- Page Title -->
-    <title>Product Add</title>
+    <title>Product Add Page</title>
 </head>
 
 <body>
@@ -149,7 +150,54 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4>Add New Product</h4>
+                        <h4>Add Product</h4>
+                        <hr />
+                        <div class="row">
+                            <div class="select-prod-img">
+                                <h4><strong>Select Product Image:</strong></h4>
+                                <p>Supported Image Types: png, jpg, etc.</p>
+                                <input type="file" name="imgFile" id="imgFile">
+                                <div class="img-preview" id="imgPrev">
+                                    <img src="" alt="Image Preview" class="img-preview_img">
+                                    <span class="img-preview_default-text">Image Preview</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="prod-group">
+                            <div class="add-prod-group">
+                                <h5><strong>Enter Product Name:</strong></h5>
+                                <input type="text" class="add-box" required>
+                            </div>
+                            <div class="add-prod-group">
+                                <h5><strong>Enter Product Availability: </strong></h5>
+                                <input type="text" class="add-box" required>
+                            </div>
+                            <div class="add-prod-group">
+                                <h5><strong>Enter Category: </strong></h5>
+                                <input type="text" class="add-box" required>
+                            </div>
+                            <div class="add-prod-group">
+                                <h5><strong>Enter Product Price: </strong></h5>
+                                <input type="text" class="add-box" required>
+                            </div>
+                            <div class="add-prod-group">
+                                <h5><strong>Enter # of Quantity in Stock: </strong></h5>
+                                <input type="text" class="add-box" required>
+                            </div>
+                            
+                            <div class="add-prod-group">
+                                <h5><strong>Enter Product Description: </strong></h5>
+                                <textarea class="prod-descript" placeholder="Enter a message..."></textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button id="saveProd-btn" type="submit" class="btn text-center"><a href="#">Save
+                                    Product</a></button>
+                                    <button id="cancel-btn" type="submit" class="btn text-center"><a href="#">Cancel</a></button>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -183,9 +231,9 @@
     <script src="../assets/plugins/popper/popper.js"></script>
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Own scripts -->
+    <!-- Local scripts -->
     <script src="../assets/js/sidebar.js"></script>
-
+    <script src="../assets/js/edit-product.js"></script>
     <!-- Script End -->
 </body>
 
