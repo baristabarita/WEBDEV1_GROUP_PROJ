@@ -13,12 +13,13 @@
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="../assets/css/sidebar-topbar.css">
+    <link rel="stylesheet" href="../assets/css/view-product.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
 
     <!-- Icon -->
     <link rel="icon" href="../images/icons/provlogo.png" type="image/x-icon">
     <!-- Page Title -->
-    <title>Profile Page</title>
+    <title>Product View</title>
 </head>
 
 <body>
@@ -149,10 +150,32 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4>User's Profile</h4>
+                        <h4>View Product Detail</h4>
+                        <img id="product-img" src="../images/sample_product.png">
+                        <h5><strong id="product-name">Name:</strong> *productname*</h5>
+                        <hr/>
+                        <h5><strong>Product Availability: </strong>*instock/nostock*</h5>
+                        <h5><strong>Category: </strong>*productcategory*</h5>
+                        <h5><strong>Product Price: </strong>*productprice*</h5>
+                        <h5><strong>Quantity in Stock: </strong>*prodquantity*</h5>
+                        <h5><strong>Total Value in Stock: </strong>*stockval*</h5>
+                        <h5><strong>Product Description: </strong></h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis lacus nunc, 
+                            id venenatis lectus scelerisque et. Quisque bibendum velit ut arcu tempor, et ornare urna 
+                            condimentum. Aliquam scelerisque orci ac pretium luctus. Cras id dictum magna. Proin aliquet 
+                            eu tortor vel rutrum. Aliquam a leo consequat, ornare justo a, posuere ligula. Phasellus 
+                            eleifend posuere erat nec feugiat. Curabitur euismod odio at metus sodales, et placerat orci 
+                            scelerisque. Duis eget nulla non ipsum euismod ullamcorper. Vestibulum sagittis quis dolor nec tincidunt.
+                        </p>
+                        <div>
+                            <button id="editProd-btn" type="submit" class="btn text-center"><a href="#">Edit Product</a></button>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
             <!-- Main-Content END -->
 
 
