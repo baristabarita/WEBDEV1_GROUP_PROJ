@@ -14,11 +14,13 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="../assets/css/sidebar-topbar.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <link rel="stylesheet" href="../assets/css/edit-profile.css">
 
     <!-- Icon -->
     <link rel="icon" href="../images/icons/provlogo.png" type="image/x-icon">
     <!-- Page Title -->
-    <title>Profile Edit</title>
+    <title>Profile Page</title>
 </head>
 
 <body>
@@ -150,7 +152,56 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h4>Edit User Profile</h4>
+                        <hr />
+                        <div class="user-prof">
+                        <div class="row">
+                            <div class="col-md-4 mt-1">
+                                <div class="select-prod-img">
+                                    <h4><strong>Select Profile Image:</strong></h4>
+                                    <p>Supported Image Types: png, jpg, etc.</p>
+                                    <input type="file" name="imgFile" id="imgFile">
+                                    <div class="img-preview" id="imgPrev">
+                                        <img src="" alt="Image Preview" class="img-preview_img">
+                                        <span class="img-preview_default-text">Image Preview</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 mt-1">
+                                <div class="card mb-3 content">
+                                    <div class="card-body">
+                                        <div class="edit-group">
+                                            <div class="edit-sub-group">
+                                                <h5><strong>Edit Full Name:</strong></h5>
+                                                <input type="text" class="edit-prof" required>
+                                            </div>
+                                            <div class="edit-sub-group">
+                                                <h5><strong>Edit Email Address: </strong></h5>
+                                                <input type="text" class="edit-prof" required>
+                                            </div>
+                                            <div class="edit-sub-group">
+                                                <h5><strong>Edit Phone Number: </strong></h5>
+                                                <input type="text" class="edit-prof" required>
+                                            </div>
+                                            
+                                            <div class="edit-sub-group">
+                                                <h5><strong>Edit Bio: </strong></h5>
+                                                <textarea class="bio-textar" placeholder="Enter Bio here..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button id="saveEdit-btn" type="submit" class="btn text-center"><a href="#">Save
+                                                    Changes</a></button>
+                                                    <button id="cancel-btn" type="submit" class="btn text-center"><a href="#">Cancel</a></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    </div>
+
                 </div>
             </div>
             <!-- Main-Content END -->
