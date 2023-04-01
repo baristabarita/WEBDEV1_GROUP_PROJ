@@ -71,8 +71,8 @@ a:focus {
 
 .table-wrapper {
 	background-color: #fff;
-	/* padding: 20px 25px; */
-	margin: 6px 0px 40px 0px;
+	padding: 20px 25px;
+	margin: 6px 40px 40px 6px;
 	width: 100%;
 	overflow: auto;
 	border-radius: 3px;
