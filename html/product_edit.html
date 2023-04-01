@@ -14,6 +14,7 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="../assets/css/sidebar-topbar.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/edit-product.css">
 
     <!-- Icon -->
     <link rel="icon" href="../images/icons/provlogo.png" type="image/x-icon">
@@ -149,7 +150,53 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4>Edit Product</h4>
+                        <h4>Edit Product Details</h4>
+                        <hr />
+                        <div class="row">
+                            <div class="select-prod-img">
+                                <h4><strong>Select Product Image:</strong></h4>
+                                <p>Supported Image Types: png, jpg, etc.</p>
+                                <input type="file" name="imgFile" id="imgFile">
+                                <div class="img-preview" id="imgPrev">
+                                    <img src="" alt="Image Preview" class="img-preview_img">
+                                    <span class="img-preview_default-text">Image Preview</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="edit-group">
+                            <div class="edit-sub-group">
+                                <h5><strong>Edit Product Name:</strong></h5>
+                                <input type="text" class="edit-control" required>
+                            </div>
+                            <div class="edit-sub-group">
+                                <h5><strong>Edit Product Availability: </strong></h5>
+                                <input type="text" class="edit-control" required>
+                            </div>
+                            <div class="edit-sub-group">
+                                <h5><strong>Edit Category: </strong></h5>
+                                <input type="text" class="edit-control" required>
+                            </div>
+                            <div class="edit-sub-group">
+                                <h5><strong>Edit Product Price: </strong></h5>
+                                <input type="text" class="edit-control" required>
+                            </div>
+                            <div class="edit-sub-group">
+                                <h5><strong>Edit # of Quantity in Stock: </strong></h5>
+                                <input type="text" class="edit-control" required>
+                            </div>
+                            
+                            <div class="edit-sub-group">
+                                <h5><strong>Edit Product Description: </strong></h5>
+                                <textarea class="prod-descript" placeholder="Enter a message..."></textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button id="saveEdit-btn" type="submit" class="btn text-center"><a href="#">Save
+                                    Changes</a></button>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -183,9 +230,9 @@
     <script src="../assets/plugins/popper/popper.js"></script>
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Own scripts -->
+    <!-- Local scripts -->
     <script src="../assets/js/sidebar.js"></script>
-
+    <script src="../assets/js/edit-product.js"></script>
     <!-- Script End -->
 </body>
 
