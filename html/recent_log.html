@@ -12,14 +12,14 @@
 
 
     <!-- Local CSS -->
+    <link rel="stylesheet" href="../assets/css/manage-product-table.css">
     <link rel="stylesheet" href="../assets/css/sidebar-topbar.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
-    <link rel="stylesheet" href="../assets/css/profile.css">
 
     <!-- Icon -->
     <link rel="icon" href="../images/icons/provlogo.png" type="image/x-icon">
     <!-- Page Title -->
-    <title>Profile Page</title>
+    <title>Dashboard Page</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <h3><img src="../images/icons/provlogo.png" class="img-fluid" /><span>PROVENTORY</span></h3>
             </div>
             <ul class="list-unstyled component m-0">
-                <li class="">
+                <li class="active">
                     <a href="./dashboard.html" class="dashboard"><i class="fa-solid fa-gauge"></i>Dashboard </a>
                 </li>
 
@@ -62,6 +62,7 @@
                 </li>
             </ul>
         </nav>
+
         <!-- Sidebar Section END -->
 
 
@@ -148,65 +149,138 @@
             <!-- Main-Content START -->
 
             <div class="main-content">
+                <div class="row justify-content-between">
+                    <h4>Recent Logs</h4>
+                    <form action="">
+                        <label for="sort-by">Sort By:</label>
+                        <select class="sort" id="sort-by">
+                            <option value="date">Date</option>
+                            <option value="type">Type</option>
+                            <option value="username">Username</option>
+                        </select>
+                    </form>
+                </div>
+
+                <!-- Table start -->
                 <div class="row">
                     <div class="col-md-12">
-                        <h4>User's Profile</h4>
-                        <hr />
-                        <div class="user-prof">
-                        <div class="row">
-                            <div class="col-md-4 mt-1">
-                                <div id="imgCard" class="card text-center sidebar">
-                                    <div class="card-body">
-                                        <img src="../images/icons/user.png" class="rounded-circle" width="200">
+                        <div class="table-wrapper">
+                            <!-- Top Part of table -->
+                            <div class="table-title">
+                                <div class="row">
+                                    <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
+                                        <h2 class="ml-lg-2">Log List</h2>
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8 mt-1">
-                                <div class="card mb-3 content">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <h5>Full Name: </h5>
-                                            </div>
-                                            <div class="col-md-9 text-secondary">
-                                                *NAME*
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <h5>Email: </h5>
-                                            </div>
-                                            <div class="col-md-9 text-secondary">
-                                                abc@gmail.com
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <h5>Phone Number: </h5>
-                                            </div>
-                                            <div class="col-md-9 text-secondary">
-                                                9999-999-9999
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <h5>Bio: </h5>
-                                            </div>
-                                            <div class="col-md-9 text-secondary">
-                                                <p>Text here</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
+                            <table class="table table-striped table-hover">
+                                <!-- Table Names -->
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <!-- Table Names -->
+
+                                <tbody>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Transaction Type</th>
+                                        <th>Short description of the transaction made</th>
+                                        <th>changed by [username]</th>
+                                        <th>Date</th>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <div class="clearfix">
+                                <div class="hint-text">Showing <b>10</b> out of <b>999</b></div>
+                                <ul class="pagination">
+                                    <li class="page-item disabled"><a href="#">Previous</a></li>
+                                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                                    <li class="page-item "><a href="#" class="page-link">2</a></li>
+                                    <li class="page-item "><a href="#" class="page-link">3</a></li>
+                                    <li class="page-item "><a href="#" class="page-link">4</a></li>
+                                    <li class="page-item "><a href="#" class="page-link">5</a></li>
+                                    <li class="page-item "><a href="#" class="page-link">Next</a></li>
+                                </ul>
                             </div>
+
                         </div>
                     </div>
-                    </div>
-
                 </div>
+                <!-- Table end-->
             </div>
             <!-- Main-Content END -->
 
