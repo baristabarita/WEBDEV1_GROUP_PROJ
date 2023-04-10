@@ -222,4 +222,15 @@ table.table .avatar {
 	background: #ddd;
 }
 
+.sort {
+	padding: 5px 3px;
+	margin: 10px;
+	font-size: 15px;
+}
+
+.sort > option {
+	font-size: 12px;
+}
+
+
 /*--table design end----*/
