@@ -1,14 +1,11 @@
 body {
     overflow-x: hidden;
-    background-image: url(../../images/log-background2.png);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    background: url(../../images/log-background2.png) no-repeat center center/cover;
 }
 
 .card0 {
     backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 8px 0px #2f4858;
+    box-shadow: 0px 4px 8px 0px #000;
     border: 1px solid transparent;
     border-radius: 0px;
     background-color: rgba(225,225,225,0.1);
@@ -49,14 +46,20 @@ body {
     margin-bottom: 10px;
 }
 #log-button{
+    transition: .3s;
+    border: #2364AA solid 2px;
     border-radius: 25px;
-    background: #2364AA;
+    background-color: #fff;
     margin-left: auto;
     margin-right: auto;
     padding: 1% 21% 1% 21%;
     font-size: 30px;
-    color: white;
+    color: #2364AA;
     font-weight: bold;
+}
+#log-button:hover{
+    background-color: #2364AA;
+    color: #fff;
 }
 #acc-option{
     border-radius: 25px;
@@ -117,22 +120,6 @@ a {
     cursor: pointer;
 }
 
-.btn-blue {
-    background-color: #1A237E;
-    width: 150px;
-    color: #fff;
-    border-radius: 2px;
-}
-
-.btn-blue:hover {
-    background-color: #6369D1;
-    cursor: pointer;
-}
-
-.bg-blue {
-    color: #fff;
-    background-color: #1A237E;
-}
 
 @media screen and (max-width: 991px) {
     .logo {
