@@ -21,6 +21,17 @@
     margin-bottom: 0px;
 }
 
+#homepage-header{
+    color: white;
+    padding-top: 100px;
+}
+
+.homepage-pic{
+    margin-top: 80px;
+    width: 120%;
+    height: 120%;
+}
+
 #homepage-btn{
     transition: .3s;
     font-size: 20px;
@@ -34,11 +45,13 @@
     transition: .3s;
     font-size: 20px;
     color: #6369D1;
-    
+    text-decoration: none;
 }
 
-#homepage-btn:hover, #homepage-btn:hover a {
+#homepage-btn:hover{
     background-color: #6369D1;
+}
+#homepage-btn:hover a {
     color: #fff;
 }
 
@@ -46,7 +59,7 @@
 
 /* About Us CSS Start*/
 .aboutUs-section{
-    background-color: #007EA7;
+    background: url(/images/InventoryManagement.png) no-repeat center center/cover;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -67,21 +80,37 @@
 
 /* Features and Contact Us Section CSS Start */
 .features-section{
-    background-color: #CCDBDC;
+    /*background-color: #CCDBDC;*/
+    background: url(/images/business-chart-visual-graphics-report-concept.png) no-repeat center center/cover;
     padding: 80px 0;
     margin-bottom: 0px;
 }
 #features-title{
+    color: #fff;
     text-align: center;
     margin-bottom: 10px;
 }
+#features-title h1{
+    text-shadow: 2px 2px #000;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#features-title hr{
+    border: solid 1px;
+}
+
 #feature-card{
     margin-bottom: 10px;
 }
 
 .contactUs-section{
     padding: 80px 0;
+    /*
     background-color: #80CED7;
+    */
+    background: url(/images/top-view-business-man-hands-working-laptop-tablet-pc-wooden-desk.png) no-repeat center center/cover;
 }
 #contact-card, #feature-card{
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
@@ -117,28 +146,34 @@
     font-size: 16px;
     padding: 0 35px;
 }
+
+
 #contactUs-btn{
-    background-color: #F2BB05;
+    transition: .3s;
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
     font-size: 20px;
-    border-radius: 12px;
-    
+    background-color: #fff;
+    color: #F2BB05;
+    border: #F2BB05 solid 2px;
+    border-radius: 10px;
+}
+
+#contactUs-btn a{
+    transition: .3s;
+    color: #F2BB05;
+    text-decoration: none;
+}
+
+#contactUs-btn:hover{
+    background-color: #F2BB05;
+}
+#contactUs-btn:hover a {
+    color: #fff;
 }
 /* Features and Contact Us Section CSS END */
 
-/*Other Systlings*/
-#homepage-header{
-    color: white;
-    padding-top: 100px;
-}
 .card-text{
     color: white;
-}
-
-.homepage-pic{
-    margin-top: 80px;
-    width: 120%;
-    height: 120%;
 }

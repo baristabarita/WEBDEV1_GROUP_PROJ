@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/forgpass.css">
+
+    <!-- Icon -->
+	<link rel="icon" href="../images/icons/provlogo.png" type="image/x-icon">
+
+	<!-- Page Title-->
+	<title>Proventory | Forgot Password</title>
+</head>
+<body>
+    <!-- Main Section -->
+    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+        
+            <div class="row justify-content-sm-center">
+                <div id="forgotpass-content" class="col-lg-7 col-md-6 col-sm-12">
+                    <div class="card0 card border-0 px-4 py-3">
+                        <h1 id="forgotpass-title">Forgot Password?</h1>
+                        <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+							<div class="row px-3">
+								<label class="mb-2">
+									<h6 class="mb-0 text-sm">Enter new Password</h6>
+								</label>
+								<input id="password" type="password" class="form-control" name="password" placeholder="Enter new password" required>
+								<div class="invalid-feedback">
+									New Password is required
+								</div>
+							</div>
+							<div class="row px-3">
+								<label class="mb-2">
+									<h6 class="mb-0 text-sm">Retype New Password</h6>
+								</label>
+								<input id="password" type="password" class="form-control" name="password" placeholder="Retype your new password" required>
+								<div class="invalid-feedback">
+									New Retyped Password is required
+								</div>
+							</div>
+							<div class="row mb-3 px-3">
+								<button id="fgp-button" type="submit" class="btn text-center">Save Password</button>
+							</div>
+						</form>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Footer Section START -->
+    <div class="footer-section">
+		<div id="footer-text">
+			<div>
+				<h4 id="footer-title"><strong>Proventory</strong></h3>
+				</h4>
+			</div>
+			<div>
+				<h5 id="footer-content" class="ml-4 ml-sm-5 mb-2">About | Contact Us | Resources | Terms</h4>
+			</div>
+			<div>
+				<small id="footer-copyright" class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2019. All rights
+					reserved.</small>
+			</div>
+		</div>
+	</div>
+    <!-- Footer Section END -->
+
+    <!-- JS Scripts -->
+    <script src="../assets/js/logreg.js"></script>
+</body>
+</html>

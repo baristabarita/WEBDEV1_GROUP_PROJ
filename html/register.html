@@ -5,10 +5,18 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Register Page</title>
+	
+	<!-- CSS Links -->
 	<link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="../assets/css/reg.css">
 	<link rel="stylesheet" href="../assets/css/style.css">
+
+	<!-- Icon -->
+	<link rel="icon" href="../images/icons/provlogo.png" type="image/x-icon">
+
+	<!-- Page Title-->
+	<title>Proventory | Registration</title>
+
 </head>
 
 <body>
@@ -37,18 +45,16 @@
 								<label class="mb-2" for="user-name">
 									<h6 class="mb-0 text-sm">Full Name</h6>
 								</label>
-								<input id="user-name" class="form-control" type="user-name" name="user-name" value="" required
-									autofocus placeholder="Enter your full name">
+								<input id="user-name" class="form-control" type="user-name" name="user-name" value="" required autofocus placeholder="Enter your full name">
 									<div class="invalid-feedback">
-										Email is invalid
+										Full name is required.
 									</div>
 							</div>
 							<div class="row px-3">
 								<label class="mb-2" for="email">
 									<h6 class="mb-0 text-sm">Email Address</h6>
 								</label>
-								<input id="email" class="form-control" type="email" name="email" value="" required
-									autofocus placeholder="Enter a valid email address">
+								<input id="email" class="form-control" type="email" name="email" value="" required autofocus placeholder="Enter a valid email address">
 								<div class="invalid-feedback">
 									Email is invalid
 								</div>
@@ -57,8 +63,7 @@
 								<label class="mb-2">
 									<h6 class="mb-0 text-sm">Password</h6>
 								</label>
-								<input id="password" type="password" class="form-control" name="password"
-									placeholder="Enter password" required>
+								<input id="password" type="password" class="form-control" name="password" placeholder="Enter password" required>
 								<div class="invalid-feedback">
 									Password is required
 								</div>
@@ -67,8 +72,7 @@
 								<label class="mb-2">
 									<h6 class="mb-0 text-sm">Retype Password</h6>
 								</label>
-								<input id="password" type="password" class="form-control" name="password"
-									placeholder="Retype your password" required>
+								<input id="password" type="password" class="form-control" name="password" placeholder="Retype your password" required>
 								<div class="invalid-feedback">
 									Retyped Password is required
 								</div>
@@ -102,7 +106,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="../js/logreg.js"></script>
+	<script src="../assets/js/logreg.js"></script>
 </body>
 
 </html>
