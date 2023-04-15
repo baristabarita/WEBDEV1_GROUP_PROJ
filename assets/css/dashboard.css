@@ -5,7 +5,9 @@ html {
 	padding: 0px;
 }
 
-
+body{
+	animation: transitionIn 0.75s;
+}
 
 h1,
 h2,
@@ -209,4 +211,17 @@ footer {
 		transition: all 150ms linear;
 		background-color: rgba(0, 0, 0, 0.5);
 	}
+}
+
+/*Testing animation for loading in*/
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
