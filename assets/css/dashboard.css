@@ -5,9 +5,11 @@ html {
 	padding: 0px;
 }
 
+/*
 body{
 	animation: transitionIn 0.75s;
 }
+*/
 
 h1,
 h2,
@@ -68,6 +70,9 @@ a:focus {
 	overflow: auto;
 }
 
+.main-content{
+	animation: transitionIn 0.75s;
+}
 
 /*-------delete modal start------*/
 
