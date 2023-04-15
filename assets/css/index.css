@@ -59,7 +59,7 @@
 
 /* About Us CSS Start*/
 .aboutUs-section{
-    background: url(/images/InventoryManagement.png) no-repeat center center/cover;
+    background: url(../../images/InventoryManagement.png) no-repeat center center/cover;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -81,7 +81,7 @@
 /* Features and Contact Us Section CSS Start */
 .features-section{
     /*background-color: #CCDBDC;*/
-    background: url(/images/business-chart-visual-graphics-report-concept.png) no-repeat center center/cover;
+    background: url(../../images/business-chart-visual-graphics-report-concept.png) no-repeat center center/cover;
     padding: 80px 0;
     margin-bottom: 0px;
 }
@@ -110,7 +110,7 @@
     /*
     background-color: #80CED7;
     */
-    background: url(/images/top-view-business-man-hands-working-laptop-tablet-pc-wooden-desk.png) no-repeat center center/cover;
+    background: url(../../images/top-view-business-man-hands-working-laptop-tablet-pc-wooden-desk.png) no-repeat center center/cover;
 }
 #contact-card, #feature-card{
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
