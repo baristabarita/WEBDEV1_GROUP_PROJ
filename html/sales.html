@@ -14,6 +14,7 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="../assets/css/sidebar-topbar.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/sales.css">
 
     <!-- Icon -->
     <link rel="icon" href="../images/icons/provlogo.png" type="image/x-icon">
@@ -131,7 +132,6 @@
                                                 <li><a href="./index.html">
                                                         <span class="material-icons">logout</span>
                                                     </a></li>
-
                                             </ul>
                                         </li>
                                     </ul>
@@ -151,9 +151,9 @@
             <main class="main-content">
                 <div class="row justify-content-between">
                     <h4>Sales</h4>
-                    <form action="">
-                        <label for="choose-period">Choose Period: </label>
-                        <input type="date">
+                    <form action="" class="form-inline">
+                        <label for="choose-period">Choose Period: &nbsp;</label>
+                        <input type="date" class="form-control">
                     </form>
                 </div>
                 <div class="status-section">
@@ -161,37 +161,143 @@
                     <div class="sales">
                         <div class="row sales-status">
                             <div class="sales-stat day">
-                                <h2 class="text-info">
+                                <h3>
                                     <i class="fa-solid fa-peso-sign"></i> 
                                     <span id="day-income">1,305</span>
-                                </h2>
+                                </h3>
                                 <p>Today's income</p>
                             </div>
                             <div class="sales-stat week">
-                                <h2 class="text-primary">
+                                <h3>
                                     <i class="fa-solid fa-peso-sign"></i> 
                                     <span id="week-income">12,005</span>
-                                </h2>
+                                </h3>
                                 <p>This Week's income</p>
                             </div>
                             <div class="sales-stat month">
-                                <h2 class="text-warning">
+                                <h3>
                                     <i class="fa-solid fa-peso-sign"></i> 
                                     <span id="month-income">55,941</span>
-                                </h2>
+                                </h3>
                                 <p>This Months's income</p>
                             </div>
                             <div class="sales-stat year">
-                                <h2 class="text-success">
+                                <h3>
                                     <i class="fa-solid fa-peso-sign"></i> 
                                     <span id="year-income">675,941</span>
-                                </h2>
+                                </h3>
                                 <p>This Year's income</p>
                             </div> 
                         </div>
                         <div>
                             <img class="sales-graph" src="../images/sample-graph.png" alt="">
                         </div> 
+                    </div>
+                    <div class="sales-info">
+                        <div class="top-selling sales">
+                            <h6>Top Selling Products</h6>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Name</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th>Amount</th>
+                                        <th>Sold</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Product Name</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>0 pcs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Product Name</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>0 pcs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Product Name</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>0 pcs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Product Name</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>0 pcs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Product Name</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>0 pcs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Product Name</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>0 pcs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Product Name</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>0 pcs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Product Name</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>XXX</td>
+                                        <td>0 pcs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="sales-info-stats sales">
+                            <h6>Total Sales</h6>
+                            <div class="total-sales-style">
+                                <h3> 
+                                    <span id="total-sales">1,305,485
+                                    </span>
+                                </h3>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>In Stock: </td>
+                                    <td>XXX</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock Value: </td>
+                                    <td>XXX</td>
+                                </tr>
+                                <tr>
+                                    <td>Units Sold: </td>
+                                    <td>XXX</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </main>
