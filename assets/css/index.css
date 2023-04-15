@@ -1,3 +1,7 @@
+body{
+    animation: transitionIn 0.75s;
+}
+
 /* Index Page NavBar CSS START */
 .navbar{
     background-color: #003249;
@@ -176,4 +180,17 @@
 
 .card-text{
     color: white;
+}
+
+/*Testing animation for loading in*/
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
