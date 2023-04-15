@@ -45,6 +45,7 @@
                     </a>
                     <ul class="collapse list-unstyled menu" id="homeSubmenu1">
                         <li><a href="./product_add.html"><i class="fa-solid fa-rectangle-history-circle-plus"></i>Add Products</a></li>
+                        <li><a href="./manage_products.html"><i class="fa-solid fa-rectangle-history-circle-plus"></i>Manage Products</a></li>
                     </ul>
                 </li>
 
@@ -148,8 +149,50 @@
             <!-- Main-Content START -->
 
             <main class="main-content">
-                <div class="row">
+                <div class="row justify-content-between">
                     <h4>Sales</h4>
+                    <form action="">
+                        <label for="choose-period">Choose Period: </label>
+                        <input type="date">
+                    </form>
+                </div>
+                <div class="status-section">
+                    
+                    <div class="sales">
+                        <div class="row sales-status">
+                            <div class="sales-stat day">
+                                <h2 class="text-info">
+                                    <i class="fa-solid fa-peso-sign"></i> 
+                                    <span id="day-income">1,305</span>
+                                </h2>
+                                <p>Today's income</p>
+                            </div>
+                            <div class="sales-stat week">
+                                <h2 class="text-primary">
+                                    <i class="fa-solid fa-peso-sign"></i> 
+                                    <span id="week-income">12,005</span>
+                                </h2>
+                                <p>This Week's income</p>
+                            </div>
+                            <div class="sales-stat month">
+                                <h2 class="text-warning">
+                                    <i class="fa-solid fa-peso-sign"></i> 
+                                    <span id="month-income">55,941</span>
+                                </h2>
+                                <p>This Months's income</p>
+                            </div>
+                            <div class="sales-stat year">
+                                <h2 class="text-success">
+                                    <i class="fa-solid fa-peso-sign"></i> 
+                                    <span id="year-income">675,941</span>
+                                </h2>
+                                <p>This Year's income</p>
+                            </div> 
+                        </div>
+                        <div>
+                            <img class="sales-graph" src="../images/sample-graph.png" alt="">
+                        </div> 
+                    </div>
                 </div>
             </main>
 
