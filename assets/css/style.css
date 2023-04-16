@@ -1,10 +1,20 @@
+/*
 html, body{
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow-x: hidden; /*To remove any white space*/
+    overflow-x: hidden; /*To remove any white space
+}*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
 }
 
 .footer-section{
