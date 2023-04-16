@@ -9,23 +9,38 @@ table {
     width: 100%;
 }
 
+.sales-wrap {
+    margin: 0 30px;
+}
+
 .sales-info {
     display: flex;
 }
 
 .top-selling {
-    width: 80%;
+    width: 75%;
     margin-right: 20px;
+    padding: 40px 50px;
 }
 
 .top-selling th,
 .top-selling td {
     text-align: center;
-    padding: 5px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #c6c6c6b0;
 }
 
 .sales-info-stats {
-    width: 20%;
+    width: 25%;
+}
+
+.sales-info-stats table {
+    margin-top: 5px;
+}
+
+.total-sales-menu {
+    position: relative;
+    left: 60px;
 }
 
 /* This is only temporary style before the actual graph */
@@ -33,10 +48,11 @@ table {
 .total-sales-style {
     width: 180px;
     height: 180px;
-    border: 20px solid #0b6dff;
+    border: 15px solid #0b6dff;
     border-radius: 50%;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 50px 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
 }
