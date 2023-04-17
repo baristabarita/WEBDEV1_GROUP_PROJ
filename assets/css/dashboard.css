@@ -105,7 +105,6 @@ a:focus {
     text-align: center;
     display: grid;
     place-items: center;
-    position: relative;
 }
 
 .cancel-btn,
