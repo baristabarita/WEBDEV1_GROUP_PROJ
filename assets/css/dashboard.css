@@ -74,47 +74,6 @@ a:focus {
 	animation: transitionIn 0.75s;
 }
 
-/*-------delete modal start------*/
-
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(157, 157, 157, 0.5);
-    display: grid;
-    place-items: center;
-    transition: var(--transition);
-    visibility: hidden;
-    z-index: -10;
-}
-
-.open-modal {
-    visibility: visible;
-    z-index: 10;
-}
-
-.modal-container {
-	padding: 30px;
-    background: #fff;
-    border-radius: 5px;
-    width: 50vw;
-    height: 33vh;
-    max-width: 440px;
-    text-align: center;
-    display: grid;
-    place-items: center;
-    position: relative;
-}
-
-.cancel-btn,
-.continue-btn {
-	margin: 18px 5px;
-}
-
-/*-------delete modal end------*/
-
 /*-------footer design start------*/
 footer {
 	background-color: #353b48;
