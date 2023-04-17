@@ -27,7 +27,7 @@
     background: #fff;
     border-radius: 5px;
     width: 50vw;
-    height: 33vh;
+    height: 40vh;
     max-width: 440px;
     text-align: center;
     display: grid;
@@ -38,7 +38,8 @@
 
 .cancel-btn,
 .continue-btn {
-	margin: 18px 5px;
+	margin: 15px 5px;
+    
 }
 
 @keyframes animatemodal{
