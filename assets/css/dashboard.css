@@ -74,6 +74,7 @@ a:focus {
 	animation: transitionIn 0.75s;
 }
 
+<<<<<<< HEAD
 /*-------delete modal start------*/
 
 .modal-overlay {
@@ -114,6 +115,8 @@ a:focus {
 
 /*-------delete modal end------*/
 
+=======
+>>>>>>> aa58e70b2bdc1b05f8bd03d1a507ecc7a6558854
 /*-------footer design start------*/
 footer {
 	background-color: #353b48;

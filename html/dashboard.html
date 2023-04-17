@@ -13,6 +13,7 @@
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="../assets/css/manage-product-table.css">
+    <link rel="stylesheet" href="../assets/css/modal.css">
     <link rel="stylesheet" href="../assets/css/sidebar-topbar.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
 
@@ -339,7 +340,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete">
+                                            <a href="#" class="delete" id="del-btn">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -364,7 +365,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete">
+                                            <a href="#" class="delete" id="del-btn">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -389,7 +390,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete">
+                                            <a href="#" class="delete" id="del-btn">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -414,7 +415,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete">
+                                            <a href="#" class="delete" id="del-btn">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -439,7 +440,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete">
+                                            <a href="#" class="delete" id="del-btn">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -467,24 +468,28 @@
                             <!-- Delete Modal - Start -->
 
                             <div class="modal-overlay">
-                                <div class="modal-container">
+                                <div id="modalContainer" class="modal-container">
                                     <h5>
                                         <i class="fa-solid fa-triangle-exclamation text-danger"></i>
+                                        WARNING
+                                        <i class="fa-solid fa-triangle-exclamation text-danger"></i>
+                                        <br>
                                          Are you sure you want to delete <br>[Product Name]?
                                     </h5>
                                     <p>
                                         This product will be deleted permanently in the inventory and will never be recovered.
                                     </p>
                                     <div class="row">
-                                        <button class="cancel-btn btn-secondary">
+                                        <button id="can-btn" class="cancel-btn btn-secondary">
                                             Cancel
                                         </button>
-                                        <button class="continue-btn btn-danger">
+                                        <button id="cont-btn" class="continue-btn btn-danger">
                                             Delete
                                         </button>
                                     </div>
                                 </div>
                             </div>
+                        
 
                             <!-- Delete Modal - End -->
 

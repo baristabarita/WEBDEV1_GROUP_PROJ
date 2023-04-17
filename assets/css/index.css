@@ -23,7 +23,7 @@ body{
 /* Header CSS START */
 .header-section{
     background-color: #003249;
-    padding-bottom: 3%;
+    padding-bottom: 8%;
     margin-bottom: 0px;
 }
 
@@ -50,6 +50,7 @@ body{
 #homepage-btn a{
     transition: .3s;
     font-size: 20px;
+    margin: 10px;
     color: #6369D1;
     text-decoration: none;
 }
@@ -68,6 +69,17 @@ body{
     background: url(../../images/InventoryManagement.png) no-repeat center center/cover;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+#aboutUs-title{
+    font-size: 50px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 }
 #aboutUs-body{
     border-radius: 25px;
