@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/super-admin-log.css">
+
+	<!-- Icon -->
+	<link rel="icon" href="../images/icons/provlogo.png" type="image/x-icon">
+
+	<!-- Page Title-->
+	<title>Proventory | Admin-Login</title>
+</head>
+
+<body>
+	<div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+		<div class="card card0 border-0 py-4">
+			<div class="row justify-content-sm-center">
+				<div class="col-lg-6">
+					<div class="card2 card border-0 px-4 py-4">
+						<img class="log-img-icon" src="../images/icons/gear.png">
+						<h1 id="log-title">Log In to Admin Account</h1>
+						<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+							<div class="row px-3">
+								<label class="mb-2" for="email">
+									<h6 class="mb-0 text-sm">Admin ID</h6>
+								</label>
+								<input id="text" class="form-control" type="text" name="text" value="" required
+									autofocus placeholder="Enter your Admin ID">
+								<div class="invalid-feedback">
+									Admin ID is Invalid
+								</div>
+							</div>
+							<div class="row px-3">
+								<label class="mb-2" for="email">
+									<h6 class="mb-0 text-sm">Email Address</h6>
+								</label>
+								<input id="email" class="form-control" type="email" name="email" value="" required
+									autofocus placeholder="Enter a valid email address">
+								<div class="invalid-feedback">
+									Email is invalid
+								</div>
+							</div>
+							<div class="row px-3">
+								<label class="mb-2">
+									<h6 class="mb-0 text-sm">Password</h6>
+								</label>
+								<input id="password" type="password" class="form-control" name="password"
+									placeholder="Enter password" required>
+								<div class="invalid-feedback">
+									Password is required
+								</div>
+							</div>
+							<div class="row px-3 mb-4">
+								<div class="custom-control custom-checkbox custom-control-inline">
+									<input id="chk1" type="checkbox" name="chk" class="custom-control-input">
+									<label for="chk1" class="custom-control-label text-sm">Remember me</label>
+								</div>
+								<a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+							</div>
+							<div class="row mb-3 px-3">
+								<button id="log-button" type="submit" class="btn text-center">Sign In</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer-section">
+		<div id="footer-text">
+			<div>
+				<h4 id="footer-title"><strong>Proventory</strong></h3>
+				</h4>
+			</div>
+			<div>
+				<h5 id="footer-content">About | Contact Us | Resources | Terms</h4>
+			</div>
+			<div>
+				<small id="footer-copyright">Copyright &copy; 2019. All rights
+					reserved.</small>
+			</div>
+		</div>
+	</div>
+	<script src="../assets/js/logreg.js"></script>
+</body>
+
+</html>
