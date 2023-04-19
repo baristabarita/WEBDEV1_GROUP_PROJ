@@ -13,6 +13,7 @@
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="../assets/css/manage-product-table.css">
+    <link rel="stylesheet" href="../assets/css/add-edit-product.css">
     <link rel="stylesheet" href="../assets/css/modal.css">
     <link rel="stylesheet" href="../assets/css/sidebar-topbar.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
@@ -46,8 +47,10 @@
                         <i class="fa-solid fa-box-open"></i>Products
                     </a>
                     <ul class="collapse list-unstyled menu" id="homeSubmenu1">
-                        <li><a href="./product_add.html"><i class="fa-solid fa-rectangle-history-circle-plus"></i>Add Products</a></li>
-                        <li><a href="./manage_products.html"><i class="fa-solid fa-rectangle-history-circle-plus"></i>Manage Products</a></li>
+                        <li><a href="./product_add.html"><i class="fa-solid fa-rectangle-history-circle-plus"></i>Add
+                                Products</a></li>
+                        <li><a href="./manage_products.html"><i
+                                    class="fa-solid fa-rectangle-history-circle-plus"></i>Manage Products</a></li>
                     </ul>
                 </li>
 
@@ -154,59 +157,6 @@
                     <div class="col-md-12">
                         <h4>Dashboard</h4>
                     </div>
-                    <!-- Charts and Graphs-->
-                    <!-- <div class="row"> -->
-
-                       <!-- <div class="col-lg-12">
-                            <div class="card shadow">
-                                <div class="card-header">
-                                    <h4 class="text-secondary fw-bold">Charts</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6">
-                                            <div class="card shadow-sm">
-                                                <div class="card-body">
-                                                    <canvas id="myChart"></canvas>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="card shadow-sm">
-                                                <div class="card-body">
-                                                    <canvas id="lineChart"></canvas>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        
-                        <!-- <div class="col-md-6 mb-3">
-                            <div class="card h-100">
-                                <div class="card-header">
-                                    <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                                    Sales this month
-                                </div>
-                                <div class="card-body">
-                                    <canvas class="chart" width="400" height="200"></canvas>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="col-md-6 mb-3">
-                            <div class="card h-100">
-                                <div class="card-header">
-                                    <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                                    Area Chart Example
-                                </div>
-                                <div class="card-body">
-                                    <canvas class="chart" width="400" height="200"></canvas>
-                                </div>
-                            </div>
-                        </div> -->
-                    <!-- </div> -->
-                    <!-- Charts and GraphsEnd-->
                 </div>
 
                 <!-- Status Section - START -->
@@ -215,70 +165,70 @@
                     <div class="inventory-stats">
                         <div class="stat bg-secondary">
                             <h1>
-                                <i class="fa-solid fa-boxes-stacked"></i> 
+                                <i class="fa-solid fa-boxes-stacked"></i>
                                 <span id="total-products">480</span>
                             </h1>
                             <p>Total Stocks</p>
                         </div>
                         <div class="stat bg-success">
                             <h1>
-                                <i class="fa-solid fa-peso-sign"></i> 
+                                <i class="fa-solid fa-peso-sign"></i>
                                 <span id="store-value">55,941</span>
                             </h1>
                             <p>Total Stock Value</p>
                         </div>
                         <div class="stat bg-danger ">
                             <h1>
-                                <i class="fa-solid fa-box-open"></i> 
+                                <i class="fa-solid fa-box-open"></i>
                                 <span id="out-of-stock">5</span>
                             </h1>
                             <p>Out of Stock</p>
                         </div>
                         <div class="stat bg-info">
                             <h1>
-                                <i class="fa-solid fa-table-list"></i> 
+                                <i class="fa-solid fa-table-list"></i>
                                 <span id="total-categories">23</span>
                             </h1>
                             <p>Total Categories</p>
                         </div>
                     </div>
-                    
+
                     <div class="sales">
                         <h5>Sales</h5>
                         <div class="row sales-status">
                             <div class="sales-stat day">
                                 <h3>
-                                    <i class="fa-solid fa-peso-sign"></i> 
+                                    <i class="fa-solid fa-peso-sign"></i>
                                     <span id="day-income">1,305</span>
                                 </h3>
                                 <p>Today's income</p>
                             </div>
                             <div class="sales-stat week">
                                 <h3>
-                                    <i class="fa-solid fa-peso-sign"></i> 
+                                    <i class="fa-solid fa-peso-sign"></i>
                                     <span id="week-income">12,005</span>
                                 </h3>
                                 <p>This Week's income</p>
                             </div>
                             <div class="sales-stat month">
                                 <h3>
-                                    <i class="fa-solid fa-peso-sign"></i> 
+                                    <i class="fa-solid fa-peso-sign"></i>
                                     <span id="month-income">55,941</span>
                                 </h3>
                                 <p>This Months's income</p>
                             </div>
                             <div class="sales-stat year">
                                 <h3>
-                                    <i class="fa-solid fa-peso-sign"></i> 
+                                    <i class="fa-solid fa-peso-sign"></i>
                                     <span id="year-income">675,941</span>
                                 </h3>
                                 <p>This Year's income</p>
-                            </div> 
+                            </div>
                         </div>
                         <div>
                             <!--<img class="sales-graph" src="../images/sample-graph.png" alt="">-->
-                                <canvas id="myChart"></canvas>
-                        </div> 
+                            <canvas id="myChart"></canvas>
+                        </div>
                     </div>
                 </section>
 
@@ -295,7 +245,8 @@
                                         <h2 class="ml-lg-2">Manage Products</h2>
                                     </div>
                                     <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
-                                        <a href="#" class="btn btn-success" id="add-product">
+                                        <a href="#addProductModal" class="btn btn-success" id="add-product"
+                                            data-toggle="modal">
                                             <i class="fa-solid fa-square-plus"></i>
                                             <span>Add New Product</span>
                                         </a>
@@ -341,7 +292,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete" id="del-btn">
+                                            <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -366,7 +317,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete" id="del-btn">
+                                            <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -391,7 +342,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete" id="del-btn">
+                                            <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -416,7 +367,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete" id="del-btn">
+                                            <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -441,7 +392,7 @@
                                             <a href="../html/product_edit.html" class="edit">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
-                                            <a href="#" class="delete" id="del-btn">
+                                            <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-trash"></i>
                                             </a>
                                         </th>
@@ -466,7 +417,7 @@
                                 </ul>
                             </div>
 
-                            <!-- Delete Modal - Start -->
+                            <!-- Delete Modal - Start
 
                             <div class="modal-overlay delete-modal">
                                 <div id="delete-modal" class="modal-container">
@@ -475,10 +426,11 @@
                                         WARNING
                                         <i class="fa-solid fa-triangle-exclamation text-danger"></i>
                                         <br>
-                                         Are you sure you want to delete <br> <span class="prod-to-delete"></span>?
+                                        Are you sure you want to delete <br> <span class="prod-to-delete"></span>?
                                     </h5>
                                     <p>
-                                        This product will be deleted permanently in the inventory and will never be recovered.
+                                        This product will be deleted permanently in the inventory and will never be
+                                        recovered.
                                     </p>
                                     <div class="row">
                                         <button id="can-btn" class="cancel-btn btn-secondary">
@@ -489,63 +441,97 @@
                                         </button>
                                     </div>
                                 </div>
-                            </div>
-                        
+                            </div>-->
 
                             <!-- Delete Modal - End -->
 
-                            <!-- Add Products Modal - Start -->
-                            <div class="modal-overlay add-prod">
-                                <div class="modal-container">
-                                    <h4>Add Product</h4>
-                                    <hr />
-                                    <div class="row">
-                                        <div class="select-prod-img">
-                                            <h4><strong>Select Product Image:</strong></h4>
-                                            <p>Supported Image Types: png, jpg, etc.</p>
-                                            <input type="file" name="imgFile" id="imgFile">
-                                            <div class="img-preview" id="imgPrev">
-                                                <img src="" alt="Image Preview" class="img-preview_img">
-                                                <span class="img-preview_default-text">Image Preview</span>
-                                            </div>
+                            <!-- New Delete Modal - Statrt -->
+                            
+                            <div class="modal fade" tabindex="-1" id="deleteProductModal" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Delete Product</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
-                                    </div>
-                                    <div class="prod-group">
-                                        <div class="add-prod-group">
-                                            <h5><strong>Enter Product Name:</strong></h5>
-                                            <input type="text" class="add-box" required>
+                                        <div class="modal-body">
+                                            <i class="fa-solid fa-triangle-exclamation text-danger"></i>
+                                            WARNING
+                                            <i class="fa-solid fa-triangle-exclamation text-danger"></i>
+                                            <br>
+                                            <p>Are you sure you want to delete this Records</p>
+                                            <p class="text-warning"><small>This product will be deleted permanently in the inventory and will never be
+                                                recovered.</small></p>
                                         </div>
-                                        <div class="add-prod-group">
-                                            <h5><strong>Enter Product Availability: </strong></h5>
-                                            <input type="text" class="add-box" required>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-success">Delete</button>
                                         </div>
-                                        <div class="add-prod-group">
-                                            <h5><strong>Enter Category: </strong></h5>
-                                            <input type="text" class="add-box" required>
-                                        </div>
-                                        <div class="add-prod-group">
-                                            <h5><strong>Enter Product Price: </strong></h5>
-                                            <input type="text" class="add-box" required>
-                                        </div>
-                                        <div class="add-prod-group">
-                                            <h5><strong>Enter # of Quantity in Stock: </strong></h5>
-                                            <input type="text" class="add-box" required>
-                                        </div>
-                                        
-                                        <div class="add-prod-group">
-                                            <h5><strong>Enter Product Description: </strong></h5>
-                                            <textarea class="prod-descript" placeholder="Enter a message..."></textarea>
-                                        </div>
-                                    </div>
-            
-                                    <div>
-                                        <button id="saveProd-btn" type="submit" class="btn text-center"><a href="#">Save
-                                                Product</a></button>
-                                                <button id="cancel-btn" type="submit" class="btn text-center"><a href="#">Cancel</a></button>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Add Products Modal - End -->
+
+                            <!-- New Delete Modal - End -->
+
+                            <!-- Add Product Modal - Start -->
+                            <div class="modal fade" tabindex="-1" id="addProductModal" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Add Employees</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <div class="select-prod-img">
+                                                    <h4><strong>Select Product Image:</strong></h4>
+                                                    <p>Supported Image Types: png, jpg, etc.</p>
+                                                    <input type="file" name="imgFile" id="imgFile">
+                                                    <div class="img-preview" id="imgPrev">
+                                                        <img src="" alt="Image Preview" class="img-preview_img">
+                                                        <span class="img-preview_default-text">Image Preview</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Product Name:</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Product Availability:</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Product Category:</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Product Price:</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Product # of Quantity in Stock:</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Product Description:</label>
+                                                <textarea class="form-control" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-success">Save Product</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Product Modal - END -->
 
                         </div>
                     </div>
@@ -582,14 +568,13 @@
     <script src="../assets/plugins/popper/popper.js"></script>
     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/plugins/chartjs/js/chart.js"></script>
-    
+
     <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     -->
-        <!-- Own scripts -->
+    <!-- Own scripts -->
     <script src="../assets/js/sales_chart.js"></script>
     <script src="../assets/js/sidebar.js"></script>
     <script src="../assets/js/delete_product.js"></script>
-    <script src="../assets/js/add-edit-modal.js"></script>
 
     <!-- Script End -->
 </body>
