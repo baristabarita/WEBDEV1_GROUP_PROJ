@@ -14,6 +14,7 @@ let product,
     productName,
     productID;
 
+//gets the product after clicking delete icon
 deleteBtn.forEach(btn => btn.addEventListener('click', () => {
     product = btn.parentElement.parentElement
     productName = product.querySelector('.product-name').innerHTML
@@ -23,10 +24,13 @@ deleteBtn.forEach(btn => btn.addEventListener('click', () => {
     modalOverlay.classList.add('open-modal')
 }))
 
+//closes the modal
 cancelBtn.addEventListener('click', () => {
     modalOverlay.classList.remove('open-modal')
 })
 
+
+//deletes the product
 contBtn.addEventListener('click', () => {
     product.innerHTML = ''
     modalOverlay.classList.remove('open-modal')
