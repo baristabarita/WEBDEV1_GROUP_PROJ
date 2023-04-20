@@ -291,7 +291,7 @@
                                             <a href="../html/product_view.html" class="view">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="../html/product_edit.html" class="edit">
+                                            <a href="#editProductModal" class="edit" id="edit-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
                                             <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
@@ -317,7 +317,7 @@
                                             <a href="../html/product_view.html" class="view">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="../html/product_edit.html" class="edit">
+                                            <a href="#editProductModal" class="edit" id="edit-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
                                             <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
@@ -343,7 +343,7 @@
                                             <a href="../html/product_view.html" class="view">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="../html/product_edit.html" class="edit">
+                                            <a href="#editProductModal" class="edit" id="edit-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
                                             <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
@@ -369,7 +369,7 @@
                                             <a href="../html/product_view.html" class="view">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="../html/product_edit.html" class="edit">
+                                            <a href="#editProductModal" class="edit" id="edit-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
                                             <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
@@ -395,7 +395,7 @@
                                             <a href="../html/product_view.html" class="view">
                                                 <i class="fa-solid fa-eye"></i>
                                             </a>
-                                            <a href="../html/product_edit.html" class="edit">
+                                            <a href="#editProductModal" class="edit" id="edit-btn" data-toggle="modal">
                                                 <i class="fa-solid fa-pen"></i>
                                             </a>
                                             <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
@@ -493,49 +493,49 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <div class="form-group">
-                                                <div class="select-prod-img">
-                                                    <p><strong>Select Product Image:</strong></p>
-                                                    <p>Supported Image Types: png, jpg, etc.</p>
-                                                    <input type="file" name="imgFile" id="imgFile">
-                                                    <div class="img-preview" id="imgPrev">
-                                                        <img src="" alt="Image Preview" class="img-preview_img">
-                                                        <span class="img-preview_default-text">Image Preview</span>
-                                                    </div>
-                                                    
+                                        <div class="form-group">
+                                            <div class="select-prod-img">
+                                                <p><strong>Select Product Image:</strong></p>
+                                                <p>Supported Image Types: png, jpg, etc.</p>
+                                                <input type="file" name="imgFile" id="imgFile">
+                                                <div class="img-preview" id="imgPrev">
+                                                    <img src="" alt="Image Preview" class="img-preview_img">
+                                                    <span class="img-preview_default-text">Image Preview</span>
                                                 </div>
+                                                
                                             </div>
-                                            <div class="form-group">
-                                                <label>Product Name:</label>
-                                                <input type="text" class="form-control prod-name"  required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Name:</label>
+                                            <input type="text" class="form-control prod-name"  required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Category:</label>
+                                            <select id="myDropdown" name="myDropdown" class="form-control" required>
+                                                <option value="" disabled selected>Choose a category</option>
+                                                <option>Clothes</option>
+                                                <option>Gadget</option>
+                                                <option>Accessories</option>
+                                                <option value="addOption">Add another category</option>
+                                            </select>
+                                            <div id="addOptionDiv" style="display: none;">
+                                                <label for="newOption">Enter new category:</label>
+                                                <input type="text" id="newOption" name="newOption" class="form-control">
+                                                <button type="button" id="addOptionButton" class="btn-secondary float-right">Add Category</button>
                                             </div>
-                                            <div class="form-group">
-                                                <label>Product Category:</label>
-                                                <select id="myDropdown" name="myDropdown" class="form-control" required>
-                                                    <option value="" disabled selected>Choose a category</option>
-                                                    <option>Clothes</option>
-                                                    <option>Gadget</option>
-                                                    <option>Accessories</option>
-                                                    <option value="addOption">Add another category</option>
-                                                </select>
-                                                <div id="addOptionDiv" style="display: none;">
-                                                    <label for="newOption">Enter new category:</label>
-                                                    <input type="text" id="newOption" name="newOption" class="form-control">
-                                                    <button type="button" id="addOptionButton" class="btn-secondary float-right">Add Category</button>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Product Price:</label>
-                                                <input type="number" min="1" class="form-control product-price" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Quantity in Stock:</label>
-                                                <input type="number" min="1" class="form-control product-quantity" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Product Description:</label>
-                                                <textarea class="form-control product-description" required></textarea>
-                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Price:</label>
+                                            <input type="number" min="1" class="form-control product-price" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Quantity in Stock:</label>
+                                            <input type="number" min="1" class="form-control product-quantity" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Description:</label>
+                                            <textarea class="form-control product-description" required></textarea>
+                                        </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
@@ -546,6 +546,73 @@
                                 </div>
                             </div>
                             <!-- Add Product Modal - END -->
+
+                            <!-- Edit Product Modal - START -->
+
+                            <div class="modal fade" tabindex="-1" id="editProductModal" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Edit Product</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <div class="form-group">
+                                            <div class="select-prod-img">
+                                                <p><strong>Select Product Image:</strong></p>
+                                                <p>Supported Image Types: png, jpg, etc.</p>
+                                                <input type="file" name="imgFile" id="imgFile">
+                                                <div class="img-preview" id="imgPrev">
+                                                    <img src="" alt="Image Preview" class="img-preview_img">
+                                                    <span class="img-preview_default-text">Image Preview</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Name:</label>
+                                            <input type="text" class="form-control prod-name"  required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Category:</label>
+                                            <select id="myDropdown" name="myDropdown" class="form-control" required>
+                                                <option value="" disabled selected>Choose a category</option>
+                                                <option>Clothes</option>
+                                                <option>Gadget</option>
+                                                <option>Accessories</option>
+                                                <option value="addOption">Add another category</option>
+                                            </select>
+                                            <div id="addOptionDiv" style="display: none;">
+                                                <label for="newOption">Enter new category:</label>
+                                                <input type="text" id="newOption" name="newOption" class="form-control">
+                                                <button type="button" id="addOptionButton" class="btn-secondary float-right">Add Category</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Price:</label>
+                                            <input type="number" min="1" class="form-control product-price" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Quantity in Stock:</label>
+                                            <input type="number" min="1" class="form-control product-quantity" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Description:</label>
+                                            <textarea class="form-control product-description" required></textarea>
+                                        </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-success" id="save-changes-btn" data-dismiss="modal">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Edit Product Modal - END -->
 
                         </div>
                     </div>

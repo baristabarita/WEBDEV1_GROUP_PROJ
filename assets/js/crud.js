@@ -131,3 +131,6 @@ const deleteFunction = () => {
 
 document.addEventListener('DOMContentLoaded', deleteFunction());
 
+// for editing products
+
+const editBtn = document.querySelectorAll('.edit');
