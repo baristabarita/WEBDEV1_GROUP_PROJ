@@ -265,6 +265,7 @@
                                         <th>Select</th>
                                         <th>Item #</th>
                                         <th>Product Name</th>
+                                        <th>Category</th>
                                         <th>Quantity</th>
                                         <th>Price</th>
                                         <th>Status</th>
@@ -273,13 +274,14 @@
                                 </thead>
                                 <!-- Table Names -->
 
-                                <tbody>
+                                <tbody class="product-list">
                                     <tr>
                                         <th><span class="custom-checkbox">
                                                 <input type="checkbox" id="checkbox1" name="option[]" value="1">
                                                 <label for="checkbox1"></label></th>
                                         <th class="item-no">#</th>
                                         <th class="product-name">Product 1</th>
+                                        <th class="product-category">Category</th>
                                         <th class="quantity">Quantity</th>
                                         <th class="price">Price</th>
                                         <th class="status">Status</th>
@@ -305,6 +307,7 @@
                                                 <label for="checkbox1"></label></th>
                                         <th class="item-no">#</th>
                                         <th class="product-name">Product 2</th>
+                                        <th class="product-category">Category</th>
                                         <th class="quantity">Quantity</th>
                                         <th class="price">Price</th>
                                         <th class="status">Status</th>
@@ -330,6 +333,7 @@
                                                 <label for="checkbox1"></label></th>
                                         <th class="item-no">#</th>
                                         <th class="product-name">Product 3</th>
+                                        <th class="product-category">Category</th>
                                         <th class="quantity">Quantity</th>
                                         <th class="price">Price</th>
                                         <th class="status">Status</th>
@@ -355,6 +359,7 @@
                                                 <label for="checkbox1"></label></th>
                                         <th class="item-no">#</th>
                                         <th class="product-name">Product 4</th>
+                                        <th class="product-category">Category</th>
                                         <th class="quantity">Quantity</th>
                                         <th class="price">Price</th>
                                         <th class="status">Status</th>
@@ -380,6 +385,7 @@
                                                 <label for="checkbox1"></label></th>
                                         <th class="item-no">#</th>
                                         <th class="product-name">Product 5</th>
+                                        <th class="product-category">Category</th>
                                         <th class="quantity">Quantity</th>
                                         <th class="price">Price</th>
                                         <th class="status">Status</th>
@@ -492,41 +498,49 @@
                                                     <p><strong>Select Product Image:</strong></p>
                                                     <p>Supported Image Types: png, jpg, etc.</p>
                                                     <input type="file" name="imgFile" id="imgFile">
-                                                    <!-- <div class="img-preview" id="imgPrev">
+                                                    <div class="img-preview" id="imgPrev">
                                                         <img src="" alt="Image Preview" class="img-preview_img">
                                                         <span class="img-preview_default-text">Image Preview</span>
-                                                    </div> -->
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label>Product Name:</label>
-                                                <input type="text" class="form-control" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Product Availability:</label>
-                                                <input type="text" class="form-control" required>
+                                                <input type="text" class="form-control prod-name"  required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Product Category:</label>
-                                                <input type="text" class="form-control" required>
+                                                <select id="myDropdown" name="myDropdown" class="form-control" required>
+                                                    <option value="" disabled selected>Choose a category</option>
+                                                    <option>Clothes</option>
+                                                    <option>Gadget</option>
+                                                    <option>Accessories</option>
+                                                    <option value="addOption">Add another category</option>
+                                                </select>
+                                                <div id="addOptionDiv" style="display: none;">
+                                                    <label for="newOption">Enter new category:</label>
+                                                    <input type="text" id="newOption" name="newOption" class="form-control">
+                                                    <button type="button" id="addOptionButton" class="btn-secondary float-right">Add Category</button>
+                                                </div>
                                             </div>
                                             <div class="form-group">
                                                 <label>Product Price:</label>
-                                                <input type="text" class="form-control" required>
+                                                <input type="number" min="1" class="form-control product-price" required>
                                             </div>
                                             <div class="form-group">
-                                                <label>Product # of Quantity in Stock:</label>
-                                                <input type="text" class="form-control" required>
+                                                <label>Quantity in Stock:</label>
+                                                <input type="number" min="1" class="form-control product-quantity" required>
                                             </div>
                                             <div class="form-group">
                                                 <label>Product Description:</label>
-                                                <textarea class="form-control" required></textarea>
+                                                <textarea class="form-control product-description" required></textarea>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-success">Save Product</button>
+                                            <button type="button" class="btn btn-success" id="save-product-btn" data-dismiss="modal">Save Product</button>
                                         </div>
                                     </div>
                                 </div>
@@ -574,7 +588,7 @@
     <!-- Own scripts -->
     <script src="../assets/js/sales_chart.js"></script>
     <script src="../assets/js/sidebar.js"></script>
-    <script src="../assets/js/delete_product.js"></script>
+    <script src="../assets/js/crud.js"></script>
 
     <!-- Script End -->
 </body>

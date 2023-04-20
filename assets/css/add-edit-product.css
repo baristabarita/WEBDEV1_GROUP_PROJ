@@ -9,7 +9,7 @@
     padding: 2px;
 }
 .img-preview{
-    width: 100px;
+    width: 100%;
     min-height: 200px;
     border: 2px solid #7A7A7A;
     margin-top: 15px;
