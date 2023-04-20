@@ -56,9 +56,15 @@
 
 -------delete modal end------*/
 
+.modal-dialog {
+	padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
 /*-------modal-style start------*/
 .modal .modal-dialog{
-    max-width:400px;
+    /* max-width:500px; */
 }
 .modal .modal-header, .modal .modal-body,.modal .modal-footer{
     padding:20px 30px;
