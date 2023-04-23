@@ -78,8 +78,7 @@ const prodPrice = document.querySelector('.product-price');
 const prodDescription = document.querySelector('.product-description');
 const productList = document.querySelector('.product-list');
 
-saveProductBtn.addEventListener('click', () => {
-
+const handleAdd = () => {
     let status = prodQuantity.value < 20 ? 'Low in Stock' : 'In Stock';
 
     productList.innerHTML += `
@@ -87,7 +86,7 @@ saveProductBtn.addEventListener('click', () => {
         <th><span class="custom-checkbox">
                 <input type="checkbox" id="checkbox1" name="option[]" value="1">
                 <label for="checkbox1"></label></th>
-        <th class="item-no">#</th>
+        <th class="item-no">${productList.rows.length+1}</th>
         <th class="product-name">${prodName.value}</th>
         <th class="product-category">${dropdown.value}</th>
         <th class="quantity">${prodQuantity.value}</th>
@@ -97,7 +96,7 @@ saveProductBtn.addEventListener('click', () => {
             <a href="../html/product_view.html" class="view">
                 <i class="fa-solid fa-eye"></i>
             </a>
-            <a href="../html/product_edit.html" class="edit">
+            <a href="#editProductModal" class="edit" data-toggle="modal">
                 <i class="fa-solid fa-pen"></i>
             </a>
             <a href="#deleteProductModal" class="delete" id="del-btn" data-toggle="modal">
@@ -106,12 +105,19 @@ saveProductBtn.addEventListener('click', () => {
         </th>
     </tr>
     `
-    deleteFunction();
-})
+
+    prodName.value = '';
+    prodPrice.value = '';
+    dropdown.selectedIndex = 0;
+    prodQuantity.value = 1;
+    prodDescription.value = '';
+
+    handleDelete();
+    handleEdit();
+}
 
 //for deleting products
-
-const deleteFunction = () => {
+const handleDelete = () => {
     let product, productName;
 
     const deleteBtn = document.querySelectorAll('.delete');
@@ -129,8 +135,44 @@ const deleteFunction = () => {
     })
 }
 
-document.addEventListener('DOMContentLoaded', deleteFunction());
-
 // for editing products
+const handleEdit = () => {
+    //selects the buttons
+    const editBtn = document.querySelectorAll('.edit');
+    const saveChanges = document.getElementById('save-changes-btn');
 
-const editBtn = document.querySelectorAll('.edit');
+    //stores the current item info
+    let currItem, name, category, quantity, price;
+
+    //selects each info on the current modal
+    const newName = document.querySelector('.edit-name');
+    const newCategory = document.querySelector('.edit-category');
+    const newQuantity = document.querySelector('.edit-quantity');
+    const newPrice = document.querySelector('.edit-price');
+
+    //initializes the current info once edit is clicked
+    editBtn.forEach(btn => btn.addEventListener('click', () => {
+        currItem = btn.parentElement.parentElement;
+        name = currItem.querySelector('.product-name')
+        category = currItem.querySelector('.product-category')
+        quantity = currItem.querySelector('.quantity')
+        price = currItem.querySelector('.price')
+
+        newName.value = name.innerHTML;
+        newCategory.value= category.innerHTML;
+        newPrice.value = price.innerHTML;
+        newQuantity.value = quantity.innerHTML;
+    }));
+
+    //saves the changes
+    saveChanges.addEventListener('click', () => {
+        name.innerHTML = newName.value;
+        category.innerHTML = newCategory.value;
+        price.innerHTML = newPrice.value;
+        quantity.innerHTML = newQuantity.value;
+    })
+}
+
+//event listeners
+document.addEventListener('DOMContentLoaded', handleDelete());
+saveProductBtn.addEventListener('click', () => handleAdd());
