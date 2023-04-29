@@ -10,22 +10,24 @@
     <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/plugins/fontawesome-free-6.4.0-web/css/all.min.css">
 
-
     <!-- Local CSS -->
-    <link rel="stylesheet" href="../../assets/css/super-admin/super-admin-sidetopbar.css">
-    <link rel="stylesheet" href="../../assets/css/super-admin/super-admin-useracc-view.css">
+    <link rel="stylesheet" href="../../assets/css/manage-product-table.css">
+    <link rel="stylesheet" href="../../assets/css/add-edit-product.css">
     <link rel="stylesheet" href="../../assets/css/super-admin/super-admin-createacc-modal.css">
+    <link rel="stylesheet" href="../../assets/css/super-admin/super-admin-sidetopbar.css">
     <link rel="stylesheet" href="../../assets/css/super-admin/super-admin-dash.css">
+    <link rel="stylesheet" href="../../assets/css/super-admin/super-admin-mng-acc.css">
+    <link rel="stylesheet" href="../../assets/css/super-admin/super-admin-profile.css">
+
 
     <!-- Icon -->
     <link rel="icon" href="../../images/icons/provlogo.png" type="image/x-icon">
     <!-- Page Title -->
-    <title>Product View</title>
+    <title>Super-Admin Manage Accounts</title>
 </head>
 
 <body>
     <div class="wrapper">
-
 
         <!-- Sidebar Section Start -->
         <nav id="sidebar">
@@ -37,23 +39,24 @@
                     <a href="super-admin-dash.html" class="dashboard"><i class="fa-solid fa-gauge"></i>Dashboard </a>
                 </li>
 
-                <li class="">
+                <li class="active">
                     <a href="./super-admin-profile.html" class=""><i class="fa-solid fa-user"></i>Profile </a>
                 </li>
-                <li class="active">
-                    <a href="#" class=""><i class="fa-solid fa-users-gear"></i>Accounts</a>
+                <li class="">
+                    <a href="./super-admin-useracc-view.html" class=""><i class="fa-solid fa-users-gear"></i>Accounts</a>
                 </li>
 
                 <li class="">
-                    <a href="super-admin-recent-logs.html" class=""><i class="fa-solid fa-clock"></i>Recent Logs </a>
+                    <a href="./super-admin-recent-logs.html" class=""><i class="fa-solid fa-clock"></i>Recent Logs </a>
                 </li>
 
                 <li class="">
-                    <a href="super-admin-log.html" class=""><i
+                    <a href="./super-admin-log.html" class=""><i
                             class="fa-solid fa-right-from-bracket"></i>Logout </a>
                 </li>
             </ul>
         </nav>
+
         <!-- Sidebar Section END -->
 
 
@@ -100,7 +103,6 @@
                                                 <li><a href="#">You Have # New Messages</a></li>
                                             </ul>
                                         </li>
-
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
                                                 <i class="fa-solid fa-envelope fa-xl"></i>
@@ -121,16 +123,14 @@
                                                     </a></li>
                                                 <li><a href="../super-admin/super-admin-log.html">
                                                         <span class="material-icons">logout</span>
-                                                    </a></li>
+                                                </a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
             <!-- Top-Navbar End -->
@@ -141,113 +141,74 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4>View User Account</h4>
-                        <h5><strong id="user-id">User ID:</strong> *user-id*</h5>
-                        <hr/>
-                        <h5><strong>Name: </strong>*name*</h5>
-                        <h5><strong>Email: </strong>*email*</h5>
-                        <h5><strong>Password: </strong>*pass*</h5>
-                        <h5><strong>User Type: </strong>*employee/admin*</h5>
-                        <h5><strong>Phone Number: </strong>*number*</h5>
-                        <div>
-                            <button id="editAcc-btn" class="btn text-center">
-                                <a href="#editAccountModal" class="edit" data-toggle="modal">Edit Account</a>
-                            </button>
-                            <button id="delAcc-btn" class="btn text-center">
-                                <a href="#deleteAccountModal" class="delete" data-toggle="modal">Delete Account</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Main-Content END -->
-
-            <!-- New Delete Modal - Statrt -->
-
-            <div class="modal fade" tabindex="-1" id="deleteAccountModal" role="dialog">
-                <div class="modal-dialog text-center" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Delete Account</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <i class="fa-solid fa-triangle-exclamation text-danger"></i>
-                            WARNING
-                            <i class="fa-solid fa-triangle-exclamation text-danger"></i>
-
-                            <p>Are you sure you want to delete <span class="acc-to-delete"></span>?</p>
-                            <p class="text-warning"><small>This account will be deleted permanently will never be
-                                    recovered.</small></p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"
-                                data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal"
-                                id="cont-btn">Delete Account</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- New Delete Modal - End -->
-
-            <!-- Add Acc Modal - Start -->
-            <div class="modal fade" tabindex="-1" id="editAccountModal" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Create Account</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="form-group">
-                                        <label>Email Address:</label>
-                                        <input type="email" class="form-control email-add" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Password:</label>
-                                        <input type="text" class="form-control password" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Username:</label>
-                                        <input type="text" class="form-control user-name" required>
+                        <h4>Admin's Profile</h4>
+                        <hr />
+                        <div class="user-prof">
+                        <div class="row">
+                            <div class="col-md-4 mt-1">
+                                <div id="imgCard" class="card text-center sidebar">
+                                    <div class="card-body">
+                                        <img src="../../images/icons/admin-profile.png" class="rounded-circle" width="200">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <div class="form-group">
-                                        <label>Phone Number:</label>
-                                        <input type="text" class="form-control phone-num" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>First Name:</label>
-                                        <input type="text" class="form-control fname" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Last Name:</label>
-                                        <input type="text" class="form-control lname" required>
+                            </div>
+                            <div class="col-md-8 mt-1">
+                                <div class="card mb-3 content">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h5>Full Name: </h5>
+                                            </div>
+                                            <div class="col-md-9 text-secondary">
+                                                *NAME*
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h5>Email: </h5>
+                                            </div>
+                                            <div class="col-md-9 text-secondary">
+                                                abc@gmail.com
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h5>Title: </h5>
+                                            </div>
+                                            <div class="col-md-9 text-secondary">
+                                                Administrator
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h5>Phone Number: </h5>
+                                            </div>
+                                            <div class="col-md-9 text-secondary">
+                                                9999-999-9999
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h5>Bio: </h5>
+                                            </div>
+                                            <div class="col-md-9 text-secondary">
+                                                <p>Text here</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"
-                                data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-info" id="save-acc-btn"
-                                data-dismiss="modal">Create Account</button>
-                        </div>
                     </div>
+                    </div>
+
                 </div>
             </div>
-            <!-- Add Acc Modal - END -->
-
+            <!-- Main-Content END -->
 
             <!-- Footer-Section START -->
 
@@ -273,9 +234,14 @@
     <script src="../../assets/plugins/jquery/jquery.js"></script>
     <script src="../../assets/plugins/popper/popper.js"></script>
     <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/plugins/chartjs/js/chart.js"></script>
 
+    <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    -->
     <!-- Own scripts -->
+    <script src="../../assets/js/su_user_log_chart.js"></script>
     <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/crud.js"></script>
 
     <!-- Script End -->
 </body>
