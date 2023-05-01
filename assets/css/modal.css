@@ -94,6 +94,7 @@
    
    .modal form label{
        font-weight:normal;
+       width: fit-content;
    }
    
    

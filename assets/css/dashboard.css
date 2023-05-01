@@ -146,6 +146,43 @@ footer {
 
 /* ------status section end------ */
 
+.place-order-btn {
+	position: absolute;
+	right: 20px;
+	margin: 20px;
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.order-table {
+	width: 100%;
+	font-weight: normal;
+	margin: 10px;
+}
+
+.order-table tr th,
+.order-table tr td {
+	font-weight: normal;
+	border-bottom: 1px solid #e9e9e9;
+	border-top: 1px solid #e9e9e9;
+	padding: 10px 15px;
+}
+
+#order-quantity {
+	width: 75px;
+	padding: 2px;
+}
+
+#order-quantity, .order-stock {
+	text-align: center;
+}
+
+#order-product {
+	margin: 10px;
+	float: right;
+}
+
 #sidebar.show-nav,
 .body-overlay.show-nav {
 	transform: translatex(0%);
@@ -185,6 +222,10 @@ footer {
 		z-index: 3;
 		transition: all 150ms linear;
 		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.place-order-btn {
+		transform: scale(0.8);
 	}
 }
 
